@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Amazing Job Offer Form</title>
+</head>
+    <body>
+        <header>
+            <h1 align="center">Amazing Job offer form</h1>
+        </header>
+            <content>
+            <div>
+            <form align="center" action="addProduct.php" method="POST" enctype="multipart/form-data">
+                <input type="text" id="name" placeholder="First Name"/>
+                <br>
+                <input type="text" id="name" placeholder="Last Name"/>
+                <br>
+                <input type="email" name="email" placeholder="Email" />
+                <br>
+                    Male<input type="radio" name="gender" value="male" />
+                    Female<input type="radio" name="gender" value="female" />
+                    Other<input type="radio" name="gender" value="other" /> 
+                <br>
+                <input type="tel" placeholder="+380"/>
+                <br>
+                <label>Choose your previous job occupation</label>
+                    <select name="category">
+                        <option value="1">Front-end</option>
+                        <option value="2">Back-end</option>
+                        <option value="3">Big Data</option>
+                    </select>
+                <br>
+                <textarea name="description" id="" placeholder="About yourself"></textarea>
+                <p>Attach your CV</p>
+                <input type="file" name="cvfile"/>
+                <br>
+                <input type="submit" name="save" value="Send your information"/>
+               
+            </div>    
+            </content>
+    </body>
+</html>         
